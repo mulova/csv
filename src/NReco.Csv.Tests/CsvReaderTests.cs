@@ -1,4 +1,5 @@
-﻿using System;
+﻿#if CSV_UNITTEST
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -169,3 +170,4 @@ namespace NReco.Csv.Tests {
 
 	}
 }
+#endif

@@ -155,6 +155,14 @@ namespace NReco.Csv {
 			}
 		}
 
+		public string this[char c]
+		{
+			get
+			{
+				return this[c - 'A'];
+			}
+		}
+
 		public int GetValueLength(int idx) {
 			if (idx < fieldsCount) {
 				var f = fields[idx];
